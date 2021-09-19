@@ -219,7 +219,7 @@ Click <a class="reference external" href="https://ahleighton.github.io/OE-ephys-
 </div>
 <div class="section" id="extra-shielding">
 <h2>Extra shielding<a class="headerlink" href="#extra-shielding" title="Permalink to this headline">¶</a></h2>
-<p>A simple and fast solution to some otherwise unsolvable noise might be to add even a partial faraday cage to your recording sites. This is true even with implants that already have a complete shielding - as long as part of your animal is not shielded, it can still pick up noise.</p>
+<p>A simple and fast solution to some otherwise unsolvable noise might be to add even a partial Faraday cage to your recording sites. This is true even with implants that already have a complete shielding - as long as part of your animal is not shielded, it can still pick up noise.</p>
 </div>
 <div class="section" id="line-noise-caused-by-usb-ground">
 <h2>Line Noise caused by USB ground<a class="headerlink" href="#line-noise-caused-by-usb-ground" title="Permalink to this headline">¶</a></h2>
@@ -231,7 +231,7 @@ Click <a class="reference external" href="https://ahleighton.github.io/OE-ephys-
 </div>
 <div class="section" id="beware-of-bad-power-supplies">
 <h2>Beware of bad power supplies<a class="headerlink" href="#beware-of-bad-power-supplies" title="Permalink to this headline">¶</a></h2>
-<p>Sometimes, aftermarket power supplies, mostly for laptops, but also for LED lights, or any other power brick, can cause a lot of line noise - try individually turning off equipment to isolate the offending one. If 60Hz is a president issue, it is worth trying powering the acquisition system from a high quality bench DC supply (5V) - this can significantly reduce noise in some cases.</p>
+<p>Sometimes, aftermarket power supplies, mostly for laptops, but also for LED lights, or any other power brick, can cause a lot of line noise - try individually turning off equipment to isolate the offending one. If 60 Hz is a president issue, it is worth trying powering the acquisition system from a high quality bench DC supply (5V) - this can significantly reduce noise in some cases.</p>
 </div>
 <div class="section" id="line-noise-caused-by-different-power-circuits">
 <h2>Line noise caused by different power circuits<a class="headerlink" href="#line-noise-caused-by-different-power-circuits" title="Permalink to this headline">¶</a></h2>
@@ -243,7 +243,7 @@ Be careful when bridging two ground circuits - sometimes they can carry a large 
 <p>Normally, we ‘ground’ equipment by attaching a single cable from the tool or shield to ground, often a conductive ground bus. This creates one low-resistance path, allowing any current to flow to ground and maintaining the grounded equipment at the same electric potential as the ground point.
 ‘Ground loops’ happen when we create a closed loop involving the ground.</p>
 <a class="reference external image-reference" href="https://tinyurl.com/ygn4urcz"><img alt="../_images/circuit-20210804-1041.png" class="align-center" src="../_images/circuit-20210804-1041.png" style="width: 304.5px; height: 480.2px;" /></a>
-<p>In this simulator, (click on image to open) we have two sources, a square-wave at 1000Hz and a sinewave at 60Hz. Even when they are separately connected to ground, they are connected through the fact that there is only one ground ‘point’; the upper and lower circuits are equivalent. If we connect the circuits, a loop is formed and their signals can interfere with each other. Even if these signals were not running, the physical loop of wire connecting them via ground can pick up magnetic fields (usually at utility frequency, 50 or 60Hz) and induce a current.</p>
+<p>In this simulator, (click on image to open) we have two sources, a square-wave at 1000 Hz and a sinewave at 60 Hz. Even when they are separately connected to ground, they are connected through the fact that there is only one ground ‘point’; the upper and lower circuits are equivalent. If we connect the circuits, a loop is formed and their signals can interfere with each other. Even if these signals were not running, the physical loop of wire connecting them via ground can pick up magnetic fields (usually at utility frequency, 50 or 60Hz) and induce a current.</p>
 <p>Use a central grounding point to prevent this. Only connect each piece of equipment to this once, and do not interconnect equipment when avoidable.</p>
 </div>
 <div class="section" id="antennae">
