@@ -30,7 +30,7 @@
 
     
     <a class="navbar-brand" href="../index.html">
-      <img src="../_static/oe_logo_circle.svg" class="logo" alt="logo">
+      <img src="../_static/oe_logo_name.svg" class="logo" alt="logo">
     </a>
     
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
@@ -123,28 +123,9 @@
           
           <div class="d-none d-xl-block col-xl-2 bd-toc">
               
-<div class="tocsection onthispage pt-5 pb-3">
-    <i class="fas fa-list"></i> On this page
-</div>
 
 <nav id="bd-toc-nav">
     <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#bitfile" class="nav-link">Bitfile</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#workflow" class="nav-link">Workflow</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#ttl-inputs" class="nav-link">TTL Inputs</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#detect-spikes" class="nav-link">Detect Spikes</a>
-        </li>
     
     </ul>
 </nav>
@@ -161,19 +142,42 @@
                 
   <span class="target" id="bonsaiacq"></span><div class="section" id="using-bonsai-with-the-oe-board">
 <h1>Using Bonsai with the OE Board<a class="headerlink" href="#using-bonsai-with-the-oe-board" title="Permalink to this headline">¶</a></h1>
-<p>pg up pg down to scroll through pages</p>
-<div class="section" id="bitfile">
-<h2>Bitfile<a class="headerlink" href="#bitfile" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="workflow">
-<h2>Workflow<a class="headerlink" href="#workflow" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="ttl-inputs">
-<h2>TTL Inputs<a class="headerlink" href="#ttl-inputs" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="detect-spikes">
-<h2>Detect Spikes<a class="headerlink" href="#detect-spikes" title="Permalink to this headline">¶</a></h2>
-</div>
+<ol class="arabic simple">
+<li><p>Install Bonsai from <a class="reference external" href="https://bonsai-rx.org/">here</a>.</p></li>
+<li><p>Click on:   Tools/ Manage Packages/</p></li>
+</ol>
+<blockquote>
+<div><p>In the package manager, search for ‘Ephys’.</p>
+<p>Install the Ephys and Ephys Design Library.</p>
+</div></blockquote>
+<a class="reference internal image-reference" href="../_images/install_ephys_packages.png"><img alt="../_images/install_ephys_packages.png" class="align-center" src="../_images/install_ephys_packages.png" style="width: 500px;" /></a>
+<ol class="arabic simple" start="3">
+<li><p>The easiest place to start is with the example workflow for ephys.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/bonsai_ephys_example_install.png"><img alt="../_images/bonsai_ephys_example_install.png" class="align-center" src="../_images/bonsai_ephys_example_install.png" style="width: 500px;" /></a>
+<ol class="arabic simple" start="4">
+<li><p>Replace the bitfile</p></li>
+</ol>
+<p>Click on the ‘Rhd200EvalBoard’ node to select it. On the right hand side, you will see a column where you can configure the properties of that node.
+Click on the ‘…’ to replace the default rhd2000_usb3.bit file with the rhd2000_usb3.bit file that is present in the installation of the Open Ephys GUI (if you have installed the GUI from here, you should find it in the installation folder).</p>
+<a class="reference internal image-reference" href="../_images/select_bitfile.png"><img alt="../_images/select_bitfile.png" class="align-center" src="../_images/select_bitfile.png" style="width: 500px;" /></a>
+<ol class="arabic simple" start="5">
+<li><p>Stream data</p></li>
+</ol>
+<p>Make sure your Open Ephys Acquisition Board and a headstage are connected. You can use the headstage without an animal to perform test recordings, just using the noise that the headstage will pick up. Click ‘Start’ to run the workflow. Double-click on each node (circle) to open the visualiser at that point in the workflow, so that you can see what each step is doing.</p>
+<ol class="arabic simple" start="6">
+<li><p>Customize Workflow</p></li>
+</ol>
+<p>The example selects only channel 1 and 2 using the ‘Select Channel’ node. Add all the channels you are interested in and run the workflow again. Use Page Up and Page Down to scroll through the pages of the visualiser.</p>
+<p>Make sure you also check and if necessary adjust the settings for the frequency filter and spike detector.</p>
+<p>You can extract more types of data from the board by right-clicking on the ‘Rhd200EvalBoard’ node. You can choose to visualise incoming TTL inputs, the auxiliary data from the headstage etc.</p>
+<ol class="arabic simple" start="7">
+<li><p>Check that your data is being saved</p></li>
+</ol>
+<p>In Bonsai, data will only be saved if there is a purple ‘sink’ node at the end of the workflow. In the example, the ephys channel data is being saved in a .bin file that you can open in, for instance, Python or MATLAB. The extracted spikes are saved as a .csv that you can open in e.g. excel.</p>
+<p>If you want to record incoming TTL timestamps you can add a branch as follows:</p>
+<a class="reference internal image-reference" href="../_images/save_ttl_timestamp.png"><img alt="../_images/save_ttl_timestamp.png" class="align-center" src="../_images/save_ttl_timestamp.png" style="width: 500px;" /></a>
+<p>Before recording a real experiment, always do a trial recording to make sure your data is being saved, and that when you open it, it contains the expected number of channels etc. You can do this without an animal, just using noise recorded from the headstage.</p>
 </div>
 
 
