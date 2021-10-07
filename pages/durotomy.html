@@ -1,0 +1,242 @@
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Durotomy &#8212; ShuttleDrive Docs 0.0.0 documentation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../_static/_static/theme_overrides.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Soldering ground screws" href="solderground.html" />
+    <link rel="prev" title="Implant protocol considerations" href="Implant-protocol-considerations.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main">
+<div class="container-xl">
+
+    
+    <a class="navbar-brand" href="../index.html">
+      <img src="../_static/oe_logo_name.svg" class="logo" alt="logo">
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbar-menu" class="col-lg-9 collapse navbar-collapse">
+      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
+        
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="assemblyguide.html">Assembling a ShuttleDrive</a>
+        </li>
+        
+        <li class="nav-item active">
+            <a class="nav-link" href="usingdrive.html">Using a ShuttleDrive</a>
+        </li>
+        
+        
+        <li class="nav-item">
+            <a class="nav-link nav-external" href="https://open-ephys.org">Open Ephys<i class="fas fa-external-link-alt"></i></a>
+        </li>
+        
+      </ul>
+
+
+      
+
+      <ul class="navbar-nav">
+        
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/open-ephys" target="_blank" rel="noopener">
+              <span><i class="fab fa-github-square"></i></span>
+            </a>
+          </li>
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/openephys" target="_blank" rel="noopener">
+              <span><i class="fab fa-twitter-square"></i></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+          <div class="col-12 col-md-3 bd-sidebar">
+
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+
+  <div class="bd-toc-item active">
+  
+
+  <ul class="nav bd-sidenav">
+      
+      
+      
+      
+        
+          
+              <li class="">
+                  <a href="depthtracking.html">Electrode depth tracking</a>
+              </li>
+          
+        
+          
+              <li class="">
+                  <a href="assemblyjig.html">Assembly Jig</a>
+              </li>
+          
+        
+          
+              <li class="">
+                  <a href="opticalfibers.html">Adding Optical Fibers</a>
+              </li>
+          
+        
+          
+              <li class="">
+                  <a href="Implant-protocol-considerations.html">Implant protocol considerations</a>
+              </li>
+          
+        
+          
+              <li class="active">
+                  <a href="">Mouse Durotomy</a>
+              </li>
+          
+        
+          
+              <li class="">
+                  <a href="solderground.html">Soldering ground screws</a>
+              </li>
+          
+        
+          
+              <li class="">
+                  <a href="screwdriver.html">Custom Screwdriver</a>
+              </li>
+          
+        
+          
+              <li class="">
+                  <a href="reuse.html">Reusing the shuttleDrive</a>
+              </li>
+          
+        
+      
+      
+    </ul>
+
+</nav>
+          </div>
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+              
+
+<nav id="bd-toc-nav">
+    <ul class="nav section-nav flex-column">
+    
+    </ul>
+</nav>
+
+
+              
+          </div>
+          
+
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="mouse-durotomy">
+<span id="durotomy"></span><h1>Mouse Durotomy<a class="headerlink" href="#mouse-durotomy" title="Permalink to this headline">¶</a></h1>
+<body class="theme-default aui-theme-default">
+    <div id="page">
+        <div id="main" class="aui-page-panel">
+
+            <div id="content" class="view">
+                <div class="page-metadata">
+                Created by <span class='author'> Jakob Voigts</span>
+                </div>
+                <h3 id="warningprotocol."><span style="color: rgb(255,102,0);">This outline is a suggestion based on methods that we found to work well - all methods are subject to protocol approval at your institution. </span></h3>
+                <div id="main-content" class="wiki-content group">
+                <p> Durotomies are often needed because of: regrowth, serial lowering into brain, to avoid bunching of tetrodes</p><p> </p><h3>Basic steps for successful durotomy in mice</h3>
+                1) Drill a craniotomy <br/>
+                2) Before lifting the bone, cover the area in (cooled) saline/aCSF to avoid any air getting in contact with the dura, <strong>even for very short periods, as any dried areas will stick to the brain, making a clean removal impossible</strong>. Use cooled saline while drilling to avoid heating up the tissue and to control swelling. Giving dexamethasone prior to surgery could also help.<br/>
+                3) Carefully lift the bone while under sterile saline/acsf.<br/>
+                4) Stop any bleeding with gelfoam and/or carefully flush out blood. Keep flushing until there is no bone dust or other debris on the surface of the liquid.<br/>
+
+                <i>(The next steps are assuming a left craniotomy on SI, and a right-handed surgeon, modify as required.)</i><br/>
+                5) Pick a spot with no surface vessels on the right edge of the craniotomy and make a very small incision into the dura with a fresh needle.<br/>
+                6) Carefully insert the lower jaw of a ceramic coated dumont #5 forceps (available at <a class="external-link" href="http://www.finescience.com/Special-Pages/Products.aspx?ProductId=333&amp;CategoryId=29" rel="nofollow">FST</a>) into the incision, almost tangential to the brain. The goal is to insert the tool under the dura as far as possible and to carefully separate it from the brain by moving the forceps laterally. During this step, the forceps should ideally not touch the cortex, though very light contact usually doesn't cause any damage.<br/>
+                7) Once enough dura has been detached from the brain (ideally you should have loosened up the medial half of the craniotomy by now, all the way to the rostral and caudal ends of the craniotomy) carefully lift the forceps a bit to suction more saline under the still attached flap of dura. This can help in detaching more dura.<br/>
+                Occasionally, the dura seems lightly attached to the underlying tissue at the sides of large surface vessels, and lifting it off can cause bleeding. In the few cases that we encountered this, the bleeding could be stopped relatively easily with gelfoam, but extra caution is needed when this happens to avoid damaging the big blood vessels when lifting the dura.<br/>
+                8) Pull off dura at one side of the craniotomy and pull the resulting flap off to the opposite side. Avoid creating small free floating segments of dura that could settle in the area of electrode placement!<br/>
+                9) Repeat the process with the remaining, more lateral part of the dura.<br/>
+                10)When finished, rinse with more cooled saline/aCSF and keep covered until ready to implant the drive. It might be simplest to cover the craniotomy with surgilube or a oil/paraffin medium to keep the brain protected until the implant.<br/></p><p> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body></div>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+    <a class='left-prev' id="prev-link" href="Implant-protocol-considerations.html" title="previous page">Implant protocol considerations</a>
+    <a class='right-next' id="next-link" href="solderground.html" title="next page">Soldering ground screws</a>
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+
+    <script src="../_static/js/index.js"></script>
+    <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    <p>
+          &copy; Copyright 2010-2021, Open Ephys &amp; Contributors.<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

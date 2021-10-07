@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Open Ephys Acquisition Board &#8212; Open Ephys Acquisition Board</title>
+    <title>ShuttleDrive Tetrode Drive &#8212; ShuttleDrive Docs 0.0.0 documentation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="_static/_static/theme_overrides.css" type="text/css" />
@@ -20,7 +20,7 @@
     <link rel="shortcut icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="User Manual" href="User-Manual/index.html" />
+    <link rel="next" title="Assembling a ShuttleDrive" href="pages/assemblyguide.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
   </head>
@@ -31,7 +31,7 @@
 
     
     <a class="navbar-brand" href="#">
-      <img src="_static/oe_logo_acq_board.svg" class="logo" alt="logo">
+      <img src="_static/oe_logo_name.svg" class="logo" alt="logo">
     </a>
     
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,19 +43,11 @@
         
         
         <li class="nav-item ">
-            <a class="nav-link" href="User-Manual/index.html">User Manual</a>
+            <a class="nav-link" href="pages/assemblyguide.html">Assembling a ShuttleDrive</a>
         </li>
         
         <li class="nav-item ">
-            <a class="nav-link" href="Build-Instructions/index.html">Build Instructions</a>
-        </li>
-        
-        <li class="nav-item ">
-            <a class="nav-link" href="Tutorials/index.html">Tutorials</a>
-        </li>
-        
-        <li class="nav-item ">
-            <a class="nav-link" href="FAQ/index.html">FAQs</a>
+            <a class="nav-link" href="pages/usingdrive.html">Using a ShuttleDrive</a>
         </li>
         
         
@@ -111,10 +103,6 @@
       
       
       
-      
-      
-      
-      
     </ul>
 
 </nav>
@@ -132,76 +120,61 @@
               
               <div>
                 
-  <div class="section" id="open-ephys-acquisition-board">
-<h1>Open Ephys Acquisition Board<a class="headerlink" href="#open-ephys-acquisition-board" title="Permalink to this headline">¶</a></h1>
-<p><em>This is the documentation site for the Open Ephys Acquisition Board, an open-source interface for acquiring up to 512 channels of extracellular electrophysiology data over a USB connection.</em></p>
-<img alt="Photograph of the Open Ephys acquisition board" src="_images/acquisition-board.jpg" />
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
+  <div class="section" id="shuttledrive-tetrode-drive">
+<h1>ShuttleDrive Tetrode Drive<a class="headerlink" href="#shuttledrive-tetrode-drive" title="Permalink to this headline">¶</a></h1>
+<p><em>This is the documentation site for the Open Ephys ShuttleDrive Tetrode drive, an open-source, lightweight tetrode drive for use in freely moving mice.</em></p>
+<a class="reference internal image-reference" href="_images/shuttleDrive_drawing.png"><img alt="_images/shuttleDrive_drawing.png" class="align-center" src="_images/shuttleDrive_drawing.png" style="width: 373.6px; height: 228.8px;" /></a>
 <div class="section" id="key-specifications">
 <h2>Key Specifications<a class="headerlink" href="#key-specifications" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><strong>Headstage connectors:</strong> 4 (up to 2 64-channel headstages per connection)</p></li>
-<li><p><strong>Maximum channel count:</strong> 512</p></li>
-<li><p><strong>Data interface:</strong> USB</p></li>
-<li><p><strong>Analog inputs</strong>: 8</p></li>
-<li><p><strong>Digital inputs</strong>: 8</p></li>
-<li><p><strong>Supported operating systems:</strong> macOS, Linux, and Windows</p></li>
+<li><p>Channel count: 16 tetrodes, up to 64 ephys channels per ShuttleDrive</p></li>
+<li><p>Weight: ~2g for 16 tetrode drives</p></li>
+<li><p>Build time:  &lt; 1 day</p></li>
+<li><p>Travel distance: 4.5 mm</p></li>
+<li><p>Fully enclosed mechanism</p></li>
+<li><p>Low center of gravity</p></li>
+<li><p>Easy and fast to assemble</p></li>
+<li><p>Note that there is a design available for a 256 channel, 64 tetrode drive <a class="reference external" href="https://github.com/open-ephys/shuttle-drive/tree/master/large_64drives">here</a></p></li>
 </ul>
-</div>
-<div class="section" id="where-to-buy-one">
-<h2>Where to buy one<a class="headerlink" href="#where-to-buy-one" title="Permalink to this headline">¶</a></h2>
-<p>You can order an assembled Acquisition Board from <a class="reference external" href="https://open-ephys.org/acquisition-system/eux9baf6a5s8tid06hk1mw5aafjdz1">Open Ephys Production Site</a> , and headstages and cables can be purchased from Intan. You can also order an <a class="reference external" href="https://open-ephys.org/acquisition-system/starter-kit">Open Ephys Starter Kit</a>, which contains everything you need to get started (except for electrodes and a computer).</p>
-<p>Because all the designs are freely available, you can also build the Acquisition Board yourself. We estimate you’ll spend about 2-3 days of work and about $1000. Follow the instructions <a class="reference internal" href="Build-Instructions/index.html#buildinstructions"><span class="std std-ref">here</span></a> to learn how to build your own board.</p>
+<p>The 16 tetrode implant weighs approximately 2 grams, so it can be used in freely moving mice. The small size and low center of gravity of the design also makes it possible to target off-center areas, or even to fit a drive implant under a microscope for simultaneous imaging and electrophysiology.
+The flexible recording array geometry allows recordings from multiple brain areas. Individual lowering of each electrode makes it possible to hit deep and small targets. The drive is easy to build, two or three drives can be built per day even with relatively little training. It accommodates arbitrary spatial arrangements of electrodes, and is compatible with a variety of recording systems.</p>
+<p>This design is the successor to the flexDrive, and has improved build speed, robustness, size, and drive stability and linearity.
+The documentation for the flexDrive is available <a class="reference internal" href="pages/flexDrive/flexdriveoverview.html#flexdriveoverview"><span class="std std-ref">here</span></a>.</p>
 </div>
 <div class="section" id="getting-started">
 <h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
-<p>Besides the acquisition board, you will need <a class="reference internal" href="User-Manual/Acquisition-system-parts.html#acsystemparts"><span class="std std-ref">these other components</span></a> to start collecting data. If you already have all of the necessary parts in your lab, follow the <a class="reference internal" href="User-Manual/Quickstart-guide.html#quickstartguide"><span class="std std-ref">Quickstart guide</span></a> to learn how to start collecting data right away. Otherwise, we recommend reading through the sub-pages to help you decide which components to buy.</p>
 <div class="container">
     <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex">
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex">
+            <a href = ../html/pages/assemblyguide.html>
             <div class="card text-center intro-card shadow" style="width: 22rem;">
-            <img src="_static/images/oe_logo_circle.svg" class="card-img-top" alt="Open Ephys logo" height="160">
+            <img src="_static/images/noun_screwdriver.svg" class="card-img-top" alt="Open Ephys logo" height="160">
             <div class="card-body flex-fill">
-                <h4 class="card-title">User Manual: Quickstart Guide</h5>
-                <p class="card-text">Read this if you're just starting out.</p><div class="custom-button docutils container">
-<p><a class="reference internal" href="User-Manual/Quickstart-guide.html#quickstartguide"><span class="std std-ref">Getting started &gt;&gt;</span></a></p>
-</div>
-    </div>
+                <h4 class="card-title">Building a Drive</h5></a>    </div>
     </div>
 </div>
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex">
+<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex">
+    <a href = ../html/partslist.html#partslist>
+    <div class="card text-center intro-card shadow" style="width: 22rem;">
+    <img src="_static/images/shuttledrive.svg" class="card-img-top" height="160">
+    <div class="card-body flex-fill">
+        <h4 class="card-title">Using the Drive</h5></a>    </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex">
+    <a href = "https://iopscience.iop.org/article/10.1088/1741-2552/ab77f9">
+    <div class="card text-center intro-card shadow" style="width: 22rem;">
+    <img src="_static/images/paper.svg" class="card-img-top" alt="Some books" height="160">
+    <div class="card-body flex-fill">
+        <h4 class="card-title">ShuttleDrive Paper</h5></a>    </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex">
+    <a href = "https://open-ephys.org/drive-implant/drive-parts">
     <div class="card text-center intro-card shadow" style="width: 22rem;">
     <img src="_static/images/noun_macbook.svg" class="card-img-top" alt="A laptop" height="160">
     <div class="card-body flex-fill">
-        <h4 class="card-title">User Manual: Software Guide</h5>
-        <p class="card-text">How to install software.</p><div class="custom-button docutils container">
-<p><a class="reference internal" href="User-Manual/Acquisition-software.html#acquisitionsoftware"><span class="std std-ref">Installation &gt;&gt;</span></a></p>
-</div>
-    </div>
-    </div>
-</div>
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex">
-    <div class="card text-center intro-card shadow" style="width: 22rem;">
-    <img src="_static/images/noun_screwdriver.svg" class="card-img-top" alt="A screwdriver" height="160">
-    <div class="card-body flex-fill">
-        <h4 class="card-title">Assembly Instructions</h5>
-        <p class="card-text">How to build it yourself.</p><div class="custom-button docutils container">
-<p><a class="reference internal" href="Build-Instructions/index.html#buildinstructions"><span class="std std-ref">Build Instructions &gt;&gt;</span></a></p>
-</div>
-    </div>
-    </div>
-</div>
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex">
-    <div class="card text-center intro-card shadow" style="width: 22rem;">
-    <img src="_static/images/noun_books.svg" class="card-img-top" alt="Some books" height="160">
-    <div class="card-body flex-fill">
-        <h4 class="card-title">Tutorials</h5>
-        <p class="card-text">Guided tours on a variety of topics.</p><div class="custom-button docutils container">
-<p><a class="reference internal" href="Tutorials/index.html#tutorials"><span class="std std-ref">Tutorials &gt;&gt;</span></a></p>
-</div>
-            </div>
+        <h4 class="card-title">Buy Parts Here</h5></a>            </div>
             </div>
         </div>
     </div>
@@ -216,7 +189,7 @@
               
               <div class='prev-next-bottom'>
                 
-    <a class='right-next' id="next-link" href="User-Manual/index.html" title="next page">User Manual</a>
+    <a class='right-next' id="next-link" href="pages/assemblyguide.html" title="next page">Assembling a ShuttleDrive</a>
 
               </div>
               

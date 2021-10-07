@@ -1,0 +1,254 @@
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Optical Fibers &#8212; ShuttleDrive Docs 0.0.0 documentation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../_static/_static/theme_overrides.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Implant protocol considerations" href="Implant-protocol-considerations.html" />
+    <link rel="prev" title="Assembly Jig" href="assemblyjig.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main">
+<div class="container-xl">
+
+    
+    <a class="navbar-brand" href="../index.html">
+      <img src="../_static/oe_logo_name.svg" class="logo" alt="logo">
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbar-menu" class="col-lg-9 collapse navbar-collapse">
+      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
+        
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="assemblyguide.html">Assembling a ShuttleDrive</a>
+        </li>
+        
+        <li class="nav-item active">
+            <a class="nav-link" href="usingdrive.html">Using a ShuttleDrive</a>
+        </li>
+        
+        
+        <li class="nav-item">
+            <a class="nav-link nav-external" href="https://open-ephys.org">Open Ephys<i class="fas fa-external-link-alt"></i></a>
+        </li>
+        
+      </ul>
+
+
+      
+
+      <ul class="navbar-nav">
+        
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/open-ephys" target="_blank" rel="noopener">
+              <span><i class="fab fa-github-square"></i></span>
+            </a>
+          </li>
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/openephys" target="_blank" rel="noopener">
+              <span><i class="fab fa-twitter-square"></i></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+          <div class="col-12 col-md-3 bd-sidebar">
+
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+
+  <div class="bd-toc-item active">
+  
+
+  <ul class="nav bd-sidenav">
+      
+      
+      
+      
+        
+          
+              <li class="">
+                  <a href="depthtracking.html">Electrode depth tracking</a>
+              </li>
+          
+        
+          
+              <li class="">
+                  <a href="assemblyjig.html">Assembly Jig</a>
+              </li>
+          
+        
+          
+              <li class="active">
+                  <a href="">Adding Optical Fibers</a>
+              </li>
+          
+        
+          
+              <li class="">
+                  <a href="Implant-protocol-considerations.html">Implant protocol considerations</a>
+              </li>
+          
+        
+          
+              <li class="">
+                  <a href="durotomy.html">Mouse Durotomy</a>
+              </li>
+          
+        
+          
+              <li class="">
+                  <a href="solderground.html">Soldering ground screws</a>
+              </li>
+          
+        
+          
+              <li class="">
+                  <a href="screwdriver.html">Custom Screwdriver</a>
+              </li>
+          
+        
+          
+              <li class="">
+                  <a href="reuse.html">Reusing the shuttleDrive</a>
+              </li>
+          
+        
+      
+      
+    </ul>
+
+</nav>
+          </div>
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+              
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="nav section-nav flex-column">
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#making-fiber-stubs-by-hand" class="nav-link">Making fiber stubs by hand</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#inserting-fiber-stubs-into-the-guide-tube-array" class="nav-link">Inserting fiber stubs into the guide tube array</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#mobile-optical-fibers" class="nav-link">Mobile optical Fibers</a>
+        </li>
+    
+    </ul>
+</nav>
+
+
+              
+          </div>
+          
+
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="adding-optical-fibers">
+<span id="addfibers"></span><h1>Adding Optical Fibers<a class="headerlink" href="#adding-optical-fibers" title="Permalink to this headline">¶</a></h1>
+<p>Optical fibers can be added to the shuttleDrive. We recommend inserting the fibers after loading the electrodes, as usually some fibers extend past the drive bottom, so they would interfere with cutting the electrodes. Inserting fibers into the array through prepared openings (see section on making the guide tube array for details) is easier if the drive isn’t shielded yet. If movable fibers are needed, see below for details on how to insert flexible 125u fibers instead, or along with, electrodes.</p>
+<p>This section assumes that you use 125 or 200 micron glass fibers. Most steps will be the same for plastic fibers.</p>
+<div class="section" id="making-fiber-stubs-by-hand">
+<h2>Making fiber stubs by hand<a class="headerlink" href="#making-fiber-stubs-by-hand" title="Permalink to this headline">¶</a></h2>
+<p>Cut a length of fiber, and remove the plastic cladding. This is much easier done for larger pieces at once.</p>
+<a class="external-link" href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=0CB8QtwIwAA&amp;url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DZvMpc9y_HaU&amp;ei=V46xU42IMojN8wHOpICwBg&amp;usg=AFQjCNEFUhG1f46uG_g7Luf52VWz7f-srQ&amp;sig2=O4rHAhz3_SXGgTG5A5CFyw&amp;bvm=bv.69837884,d.b2U" rel="nofollow">Video tutorial for removing plastic cladding</a> for a video tutorial<p>For added safety, cut a small slot or two into the bottom of the ferrule to ensure that it won’t slip out of the epoxy. This is especially important for ceramic ferrules. Use a high speed cutting wheel for this.</p>
+<p>Now glue the ferrules to the fiber. One easy process is to line up ~5 ferrules on the long fiber, add a drop of glue under each one, and then sliding them over the glue.
+Ferrules  have two sides, a convex and a concave one. The convex side needs to be facing the fiber patch cable, the concave side is where the longer piece of free fiber sticks out. Reversing the sides will likely  make it impossible to achieve good coupling.</p>
+<p>Once the glue is set, cut the long piece into individual stubs above each ferrule by scoring with the diamond pen and breaking them. Make sure that the cut is not going below the ferrule face or it will be impossible to polish the fiber.</p>
+<p>Now cut the fiber stubs to length at the ‘bottom’ end.</p>
+<p>Polish the fibers.</p>
+<p>Measure the light throughput with a stable light source and light meter. Its very important to use a light source with a fiber of the exact same NA and fiber diameter as will be used later, otherwise the measurement results can be meaningless.</p>
+</div>
+<div class="section" id="inserting-fiber-stubs-into-the-guide-tube-array">
+<h2>Inserting fiber stubs into the guide tube array<a class="headerlink" href="#inserting-fiber-stubs-into-the-guide-tube-array" title="Permalink to this headline">¶</a></h2>
+<p>Cut the stub to the right length - when the bottom is at the desired position at the drive bottom, the ferrule should intersect the EIB so that a minimal length of the ferrule remains under the EIB.
+If you left an opening in the guide tube array for the fiber to go through, drop the fiber through the correct hole in the EIB and try to hit the hole in the guide tube array. It can help to direct the fiber by holding it with small forceps under the EIB. Once it is in the guide tube array, push it lower till the depth is right (you can usually still adjust by a few 100 micron at this step by changing how deep the ferrule sits in the hole in the EIB) and glue the ferrule to the EIB with epoxy. Make sure to get enough epoxy both above AND below the EIB to hold the ferrule in place securely. It’s pretty easy to accidentally pull out a ferrule if it’s not glued properly.</p>
+</div>
+<div class="section" id="mobile-optical-fibers">
+<h2>Mobile optical Fibers<a class="headerlink" href="#mobile-optical-fibers" title="Permalink to this headline">¶</a></h2>
+<p>If independent adjustment of the fiber depth throughout the experiment is desired, one or more small diameter fibers (~125μ) can be inserted in place of electrodes and can be lowered using the same mechanism. We found larger diameter fibers not sufficiently flexible for this method.</p>
+<p>In this design, the fiber is lowered into a guide tube and glued to the spring in place of a shuttle tube. The free upper end of the fiber with the ferrule connector (extending ~2 cm past the spring) is then looped around and fixed perpendicular to the electrode interface board using epoxy. This free loop provides enough flexibility for the fiber to move up and down. If desired, electrodes can be glued to the fibers at constant depth offset. In practice, we find that attaching 2 ferrules to the electrode interface board is straightforward, though in principle up to 16 fibers could be attached.</p>
+<img alt="pages/../static/images/variant_moveable_fibers_example.png" class="align-center" src="pages/../static/images/variant_moveable_fibers_example.png" />
+<p>This variant of the flexDrive enables researchers to precisely position optical fibers to electrically identified target areas, or to compare optical manipulation of neural activity in different positions in the same animal. Further, this method enables the collection of optical signals from fluorescent probes while simultaneously recording extracellularly.</p>
+</div>
+</div>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+    <a class='left-prev' id="prev-link" href="assemblyjig.html" title="previous page">Assembly Jig</a>
+    <a class='right-next' id="next-link" href="Implant-protocol-considerations.html" title="next page">Implant protocol considerations</a>
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+
+    <script src="../_static/js/index.js"></script>
+    <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    <p>
+          &copy; Copyright 2010-2021, Open Ephys &amp; Contributors.<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,241 @@
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Screwdriver &#8212; ShuttleDrive Docs 0.0.0 documentation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../_static/_static/theme_overrides.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Reusing the shuttleDrive" href="reuse.html" />
+    <link rel="prev" title="Soldering ground screws" href="solderground.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main">
+<div class="container-xl">
+
+    
+    <a class="navbar-brand" href="../index.html">
+      <img src="../_static/oe_logo_name.svg" class="logo" alt="logo">
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbar-menu" class="col-lg-9 collapse navbar-collapse">
+      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
+        
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="assemblyguide.html">Assembling a ShuttleDrive</a>
+        </li>
+        
+        <li class="nav-item active">
+            <a class="nav-link" href="usingdrive.html">Using a ShuttleDrive</a>
+        </li>
+        
+        
+        <li class="nav-item">
+            <a class="nav-link nav-external" href="https://open-ephys.org">Open Ephys<i class="fas fa-external-link-alt"></i></a>
+        </li>
+        
+      </ul>
+
+
+      
+
+      <ul class="navbar-nav">
+        
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/open-ephys" target="_blank" rel="noopener">
+              <span><i class="fab fa-github-square"></i></span>
+            </a>
+          </li>
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/openephys" target="_blank" rel="noopener">
+              <span><i class="fab fa-twitter-square"></i></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+          <div class="col-12 col-md-3 bd-sidebar">
+
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+
+  <div class="bd-toc-item active">
+  
+
+  <ul class="nav bd-sidenav">
+      
+      
+      
+      
+        
+          
+              <li class="">
+                  <a href="depthtracking.html">Electrode depth tracking</a>
+              </li>
+          
+        
+          
+              <li class="">
+                  <a href="assemblyjig.html">Assembly Jig</a>
+              </li>
+          
+        
+          
+              <li class="">
+                  <a href="opticalfibers.html">Adding Optical Fibers</a>
+              </li>
+          
+        
+          
+              <li class="">
+                  <a href="Implant-protocol-considerations.html">Implant protocol considerations</a>
+              </li>
+          
+        
+          
+              <li class="">
+                  <a href="durotomy.html">Mouse Durotomy</a>
+              </li>
+          
+        
+          
+              <li class="">
+                  <a href="solderground.html">Soldering ground screws</a>
+              </li>
+          
+        
+          
+              <li class="active">
+                  <a href="">Custom Screwdriver</a>
+              </li>
+          
+        
+          
+              <li class="">
+                  <a href="reuse.html">Reusing the shuttleDrive</a>
+              </li>
+          
+        
+      
+      
+    </ul>
+
+</nav>
+          </div>
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+              
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="nav section-nav flex-column">
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#how-the-screwdriver-works" class="nav-link">How the screwdriver works</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#building-the-screwdriver" class="nav-link">Building the screwdriver</a>
+        </li>
+    
+    </ul>
+</nav>
+
+
+              
+          </div>
+          
+
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="custom-screwdriver">
+<span id="screwdriver"></span><h1>Custom Screwdriver<a class="headerlink" href="#custom-screwdriver" title="Permalink to this headline">¶</a></h1>
+<a href="https://open-ephys.org/drive-implant/drive-screwdriver>" class="btn btn-primary" style="background-color:#f4d050;border-color:#f4d050">Buy Custom Screwdriver</a><div class="section" id="how-the-screwdriver-works">
+<h2>How the screwdriver works<a class="headerlink" href="#how-the-screwdriver-works" title="Permalink to this headline">¶</a></h2>
+<p>A custom screwdriver is needed to turn the screws during construction and for later adjustment. Adjusting electrodes is a slightly delicate process, having the right tool for the job makes it much easier. There are two issues with the process: 1) Good depth tracking requires very precise adjustment, so that as errors accumulate, they don’t become significant. 2) Electrodes and springs should not be touched.</p>
+<p>This custom screwdriver for half-circle/ half-moon screw heads makes adjustments much easier by breaking the step of getting the screwdriver onto the screw head into two steps:</p>
+<ol class="arabic simple">
+<li><p>Roughly engage screw driver with screw head,  correct rotation doesn’t matter in this step.</p></li>
+<li><p>Gently rotate the screwdriver until it engages with the screw head and is locked into the same angle as the screw. It will slip a bit (~1mm) further onto the screw when it engages. Now you can apply more torque to rotate the screw.</p></li>
+</ol>
+</div>
+<div class="section" id="building-the-screwdriver">
+<h2>Building the screwdriver<a class="headerlink" href="#building-the-screwdriver" title="Permalink to this headline">¶</a></h2>
+<p>Such screwdrivers can be made by gluing or soldering a screw into the end of a piece of steel tube with an ID of close to 1 mm. Thin-walled tubes are recommended because thicker tubes will interfere with the rest of the drive body when adjusting. The screw used for this should be inspected to make sure that the protruding half-moon section is on the smaller side, so it can interface with other screws. It can also help to carefully bevel the edge of this section with fine sandpaper. The screw should be slightly recessed into the steel tube so that the screwdriver can be locked onto a screw axially first, and then rotated to snap into the mating screw rotationally. A 3D-printed screwdriver handle and detailed tube measurements and sources are available on the git repository.</p>
+<p>Assembled or unassembled screwdrivers can be bought in the <a class="reference external" href="https://open-ephys.org/drive-implant/drive-screwdriver">Open Ephys Production Site store</a></p>
+<img alt="pages/../../_static/images/makingscrewdriver.jpg" src="pages/../../_static/images/makingscrewdriver.jpg" />
+<p>A handle can be made by applying heat-shrink tubing to the cannula, or by 3D printing the handle from files available on the git repository.</p>
+</div>
+</div>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+    <a class='left-prev' id="prev-link" href="solderground.html" title="previous page">Soldering ground screws</a>
+    <a class='right-next' id="next-link" href="reuse.html" title="next page">Reusing the shuttleDrive</a>
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+
+    <script src="../_static/js/index.js"></script>
+    <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    <p>
+          &copy; Copyright 2010-2021, Open Ephys &amp; Contributors.<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

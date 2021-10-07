@@ -35,13 +35,13 @@
 
 /* navigation bar colors*/
 .navbar {
-  background: #da714a !important;
+  background: #009933 !important;
   font-size: 1em;
 }
 
 .navbar-nav > .active > .nav-link {
   background-color: #f4d050 !important;
-  color: #344b39 !important;
+  color: #004d26 !important;
   font-weight: normal !important;
   transition-duration: 0.4s;
 }
@@ -145,7 +145,7 @@ h2 {
 }
 
 h3 {
-  margin: 2.75rem 0 1.05rem;
+  margin: 0rem 0 1.05rem;
   font-family: "Bitter", sans-serif;
   font-weight: 400;
   line-height: 1.15;

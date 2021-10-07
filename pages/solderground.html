@@ -1,0 +1,220 @@
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soldering ground screws &#8212; ShuttleDrive Docs 0.0.0 documentation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../_static/_static/theme_overrides.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Custom Screwdriver" href="screwdriver.html" />
+    <link rel="prev" title="Mouse Durotomy" href="durotomy.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main">
+<div class="container-xl">
+
+    
+    <a class="navbar-brand" href="../index.html">
+      <img src="../_static/oe_logo_name.svg" class="logo" alt="logo">
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbar-menu" class="col-lg-9 collapse navbar-collapse">
+      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
+        
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="assemblyguide.html">Assembling a ShuttleDrive</a>
+        </li>
+        
+        <li class="nav-item active">
+            <a class="nav-link" href="usingdrive.html">Using a ShuttleDrive</a>
+        </li>
+        
+        
+        <li class="nav-item">
+            <a class="nav-link nav-external" href="https://open-ephys.org">Open Ephys<i class="fas fa-external-link-alt"></i></a>
+        </li>
+        
+      </ul>
+
+
+      
+
+      <ul class="navbar-nav">
+        
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/open-ephys" target="_blank" rel="noopener">
+              <span><i class="fab fa-github-square"></i></span>
+            </a>
+          </li>
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/openephys" target="_blank" rel="noopener">
+              <span><i class="fab fa-twitter-square"></i></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+          <div class="col-12 col-md-3 bd-sidebar">
+
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+
+  <div class="bd-toc-item active">
+  
+
+  <ul class="nav bd-sidenav">
+      
+      
+      
+      
+        
+          
+              <li class="">
+                  <a href="depthtracking.html">Electrode depth tracking</a>
+              </li>
+          
+        
+          
+              <li class="">
+                  <a href="assemblyjig.html">Assembly Jig</a>
+              </li>
+          
+        
+          
+              <li class="">
+                  <a href="opticalfibers.html">Adding Optical Fibers</a>
+              </li>
+          
+        
+          
+              <li class="">
+                  <a href="Implant-protocol-considerations.html">Implant protocol considerations</a>
+              </li>
+          
+        
+          
+              <li class="">
+                  <a href="durotomy.html">Mouse Durotomy</a>
+              </li>
+          
+        
+          
+              <li class="active">
+                  <a href="">Soldering ground screws</a>
+              </li>
+          
+        
+          
+              <li class="">
+                  <a href="screwdriver.html">Custom Screwdriver</a>
+              </li>
+          
+        
+          
+              <li class="">
+                  <a href="reuse.html">Reusing the shuttleDrive</a>
+              </li>
+          
+        
+      
+      
+    </ul>
+
+</nav>
+          </div>
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+              
+
+<nav id="bd-toc-nav">
+    <ul class="nav section-nav flex-column">
+    
+    </ul>
+</nav>
+
+
+              
+          </div>
+          
+
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="soldering-ground-screws">
+<span id="groundscrew"></span><h1>Soldering ground screws<a class="headerlink" href="#soldering-ground-screws" title="Permalink to this headline">¶</a></h1>
+<p>Solder a length of wire (we use stainless steel) to a mill-max connector, or any type of connector that fits into your drive’s ground connector. We recommend using insulated wire to make it easier to ensure that there is no skin contact to the ground later, and to make it easier to embed the wire into the dental cement around the drive base (thin wires are more likely to work their way out of the cement before it fully cures). The length of the ground wire depends on the desired location and layout of the drive.</p>
+<p>Solder the free end of the wire to the top of the ground screw. Use an appropriate stainless steel flux and use the same precautions as when soldering the spring. The easiest method is to solder to one half of the top of the screw head, so that the slot for the screwdriver remains open. Alternatively, the wire can be wrapped around the screw just under the head and soldered there, but this method brings a risk of accidentally filling the threads of the screw with solder.</p>
+<p>Meticulously clean the screw of remaining flux with ethanol and/or acetone, and sterilize the screw before the implant.</p>
+<p>Skull screws are used for 2 basic functions, to provide mechanical stability to the drive, and as ground/reference electrodes.
+For instructions for fabricating the ground screws, see the relevant page in the drive building instructions.</p>
+<p>In order to minimize the space taken up by screws, as well as the impact on the animal, small screws are preferable. The most important parameter though is that the thread diameter must match the diameter of the drill bit used to make the burr holes. We got good results using a screw thread diameter of 6.5mm for #1/4 round carbide dental bits (0.5mm OD).</p>
+</div>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+    <a class='left-prev' id="prev-link" href="durotomy.html" title="previous page">Mouse Durotomy</a>
+    <a class='right-next' id="next-link" href="screwdriver.html" title="next page">Custom Screwdriver</a>
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+
+    <script src="../_static/js/index.js"></script>
+    <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    <p>
+          &copy; Copyright 2010-2021, Open Ephys &amp; Contributors.<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
