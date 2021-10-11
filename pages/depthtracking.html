@@ -20,7 +20,7 @@
     <link rel="shortcut icon" href="../_static/favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Assembly Jig" href="assemblyjig.html" />
+    <link rel="next" title="Adding Optical Fibers" href="opticalfibers.html" />
     <link rel="prev" title="Using a ShuttleDrive" href="usingdrive.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -49,6 +49,10 @@
         
         <li class="nav-item active">
             <a class="nav-link" href="usingdrive.html">Using a ShuttleDrive</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="flexDrive/flexdriveoverview.html">Archive: FlexDrive</a>
         </li>
         
         
@@ -124,7 +128,7 @@
         
           
               <li class="">
-                  <a href="Implant-protocol-considerations.html">Implant protocol considerations</a>
+                  <a href="Implant-protocol-considerations.html">Implant Protocol Considerations</a>
               </li>
           
         
@@ -154,6 +158,8 @@
         
       
       
+      
+      
     </ul>
 
 </nav>
@@ -171,7 +177,17 @@
     <ul class="nav section-nav flex-column">
     
         <li class="nav-item toc-entry toc-h2">
+            <a href="#shuttledrive-properties" class="nav-link">ShuttleDrive Properties</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#tetrodes-in-the-brain" class="nav-link">Tetrodes in the Brain</a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h3">
             <a href="#lowering-electrodes" class="nav-link">Lowering electrodes</a>
+        </li>
+    
+            </ul>
         </li>
     
     </ul>
@@ -189,16 +205,25 @@
                 
   <div class="section" id="electrode-depth-tracking">
 <span id="depthtracking"></span><h1>Electrode depth tracking<a class="headerlink" href="#electrode-depth-tracking" title="Permalink to this headline">¶</a></h1>
-<p>The 16-tetrode mouse shuttleDrive has a screw pitch of 0.15 mm/turn, and the correspondence of screw pitch to travel range is almost completely linear.</p>
-<img alt="pages/../../_static/images/tetrodedepth.jpg" class="align-center" src="pages/../../_static/images/tetrodedepth.jpg" />
-<p>The rat drive shows some scaling of the travel with a 0.205 mm/turn vs. the 0.2 mm pitch screw. Different guide tube arrangements may result in slightly different factors, so we recommend individual calibration if a very high level of precision is desired.</p>
+<p>Electrodes in the shuttleDrive are lowered individually by turning the corresponding screw. To know where your electrodes end up, we need to know how far a tetrode is lowered with each full turn. This ‘travel range’ distance is in practice a combination of the mechanical properties of the drive, the mechanical/biological properties of the brain, and the way you choose to lower your electrodes.</p>
+<div class="section" id="shuttledrive-properties">
+<h2>ShuttleDrive Properties<a class="headerlink" href="#shuttledrive-properties" title="Permalink to this headline">¶</a></h2>
+<p>The 16-tetrode mouse shuttleDrive has a screw pitch (the distance between adjacent threads on the screw) of 0.15 mm/turn, and the correspondence of screw pitch to travel range is almost completely linear, so for each turn you can expect your tetrode to lower by 0.15 mm (when the drive is in air, see below).</p>
+<div class="figure align-center">
+<img alt="Tetrode travel per screw turn for rat and mouse shuttledrive" src="../_images/tetrodedepth.jpg" />
+</div>
+<p style="line-height: 1; font-weight: 100; font-size: 0.8em" > Tetrode depth measurements. Measurements of tetrode depths over the entire adjustment ranges for the mouse (A) and rat (B) variants. This travel was measured only in the downward direction; some hysteresis will occur when reversing the drives. Hysteresis is measured as the amount of screw rotation after a direction reversal at which point the tetrode started moving again. Hysteresis is caused by different factors; see main text for a short discussion. See inserts for typical measured hysteresis. The mouse drive behaves almost completely linearly with a 1:1 correspondence of screw pitch (0.15 mm/turn) to travel range. The rat drive shows some scaling of the travel with a 0.205 mm/turn vs. the 0.2 mm pitch screw. This factor was measured for a tetrode at the periphery of a circular guide tube array, and other arrangements may result in slightly different factors. We recommend individual calibration if this level of dead-reckoning precision is desired. Reaching the design travel ranges of 4.5 mm and 10 mm requires starting at the absolute top position and moving until the shuttle touches the bottom position. Extra care is needed at these positions in order to not drive the shuttle into the end stops and strip the threads. </p><p>The rat drive shows some scaling of the travel with a 0.205 mm/turn vs. the 0.2 mm pitch screw. Different guide tube arrangements may result in slightly different factors, so we recommend individual calibration if a very high level of precision is desired.</p>
 <p>When the direction of travel is reversed, some hysteresis will occur. Hysteresis is measured as the amount of screw rotation after a direction reversal at which point the tetrode started moving again. See the above figure for measurements of the drive range and hysteresis of the presented drive design. In practice around 75 to 150 $mu{mathrm m }$ of hysteresis can be expected for the mouse drive.</p>
-<p>These measurements are performed in air, to characterize the mechanical hysteresis of the drive mechanism itself. In the brain, another level of biological hysteresis and changes in recorded units are expected from the reaction of the tissue to tetrodes. See <a class="reference external" href="https://iopscience.iop.org/article/10.1088/1741-2552/ab77f9#jneab77f9bib10">Dhawale et al 2017</a> for a discussion of the expected effects. The neuropil can react to tetrode implantation with a cascade of processes that include inflammatory processes with glial cell activation and eventual scar tissue formation. Even in the absence of overt immune responses, the neuropil is not static, and the position of neurons relative to tetrodes can be expected to drift over time.</p>
+</div>
+<div class="section" id="tetrodes-in-the-brain">
+<h2>Tetrodes in the Brain<a class="headerlink" href="#tetrodes-in-the-brain" title="Permalink to this headline">¶</a></h2>
+<p>The above measurements are performed in air, to characterize the mechanical hysteresis of the drive mechanism itself. In the brain, another level of biological hysteresis and changes in recorded units are expected from the reaction of the tissue to tetrodes. See <a class="reference external" href="https://iopscience.iop.org/article/10.1088/1741-2552/ab77f9#jneab77f9bib10">Dhawale et al 2017</a> for a discussion of the expected effects. The neuropil can react to tetrode implantation with a cascade of processes that include inflammatory processes with glial cell activation and eventual scar tissue formation. Even in the absence of overt immune responses, the neuropil is not static, and the position of neurons relative to tetrodes can be expected to drift over time.</p>
 <div class="section" id="lowering-electrodes">
-<h2>Lowering electrodes<a class="headerlink" href="#lowering-electrodes" title="Permalink to this headline">¶</a></h2>
+<h3>Lowering electrodes<a class="headerlink" href="#lowering-electrodes" title="Permalink to this headline">¶</a></h3>
 <p>Electrodes can be lowered as soon as the animal has recovered from surgery and is nesting. Delaying the onset of the lowering for more than ~5 days post surgery increases the risk that dura and bone regrowth interferes with the electrodes. Putting the mouse in a head-post on a floating ball avoids putting any torque on the implant if the mouse tries to run/jump.</p>
 <p>Lower one tetrode (or max. 2 tetrodes if they’re at opposite ends of the array) at a time to avoid bunching. Wait &gt;3hrs between lowering sessions to allow the brain to settle.</p>
 <p>Try to record data during these lowering sessions and actually look at it, in e.g. simpleclust (or whatever spike sorting method you like) to check if you get units - L1 MUA can look surprisingly like units unless you look closely and sorting is the best way to know for sure when any given tetrode is in rather than just on the brain.</p>
+</div>
 </div>
 </div>
 
@@ -209,7 +234,7 @@
               <div class='prev-next-bottom'>
                 
     <a class='left-prev' id="prev-link" href="usingdrive.html" title="previous page">Using a ShuttleDrive</a>
-    <a class='right-next' id="next-link" href="assemblyjig.html" title="next page">Assembly Jig</a>
+    <a class='right-next' id="next-link" href="opticalfibers.html" title="next page">Adding Optical Fibers</a>
 
               </div>
               
