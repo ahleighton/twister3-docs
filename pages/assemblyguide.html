@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assembling a ShuttleDrive &#8212; ShuttleDrive Docs 0.0.0 documentation</title>
+    <title>Assembly Guide &#8212; Twister3 Docs 0.0.0 documentation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="../_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="../_static/_static/theme_overrides.css" type="text/css" />
@@ -20,8 +20,8 @@
     <link rel="shortcut icon" href="../_static/favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Parts list" href="partslist.html" />
-    <link rel="prev" title="ShuttleDrive Tetrode Drive" href="../index.html" />
+    <link rel="next" title="Parts List" href="partslist.html" />
+    <link rel="prev" title="Twister3" href="../index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
   </head>
@@ -44,15 +44,11 @@
         
         
         <li class="nav-item active">
-            <a class="nav-link" href="">Assembling a ShuttleDrive</a>
+            <a class="nav-link" href="">Assembly Guide</a>
         </li>
         
         <li class="nav-item ">
-            <a class="nav-link" href="usingdrive.html">Using a ShuttleDrive</a>
-        </li>
-        
-        <li class="nav-item ">
-            <a class="nav-link" href="flexDrive/flexdriveoverview.html">Archive: FlexDrive</a>
+            <a class="nav-link" href="usingtwister.html">User Guide</a>
         </li>
         
         
@@ -96,24 +92,10 @@
         
           
               <li class="">
-                  <a href="partslist.html">Parts list</a>
+                  <a href="partslist.html">Parts List</a>
               </li>
           
         
-          
-              <li class="">
-                  <a href="assemblyjig.html">Assembly Jig</a>
-              </li>
-          
-        
-          
-              <li class="">
-                  <a href="drivemechanism.html">Drive Mechanism</a>
-              </li>
-          
-        
-      
-      
       
       
       
@@ -127,9 +109,36 @@
           
           <div class="d-none d-xl-block col-xl-2 bd-toc">
               
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
 
 <nav id="bd-toc-nav">
     <ul class="nav section-nav flex-column">
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#a-assemble-wire-feeder" class="nav-link">A) Assemble Wire Feeder</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#b-assemble-motor" class="nav-link">B) Assemble Motor</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#c-assemble-wire-clip" class="nav-link">C) Assemble Wire Clip</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#d-assemble-wire-guide" class="nav-link">D) Assemble Wire Guide</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#e-assemble-stock-spool" class="nav-link">E) Assemble Stock Spool</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#f-final-assembly-twister3" class="nav-link">F) Final Assembly Twister3</a>
+        </li>
     
     </ul>
 </nav>
@@ -137,7 +146,7 @@
 
 
 <div class="tocsection editthispage">
-    <a href="https://github.com/open-ephys/shuttledrive-docs/edit/master/source/pages/assemblyguide.rst">
+    <a href="https://github.com/ahleighton/twister3-docs/edit/main/source/pages/assemblyguide.rst">
         <i class="fas fa-pencil-alt"></i> Edit this page
     </a>
 </div>
@@ -151,21 +160,89 @@
               
               <div>
                 
-  <div class="section" id="assembling-a-shuttledrive">
-<span id="assemblyguide"></span><h1>Assembling a ShuttleDrive<a class="headerlink" href="#assembling-a-shuttledrive" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="assembly-guide">
+<span id="assemblyguide"></span><h1>Assembly Guide<a class="headerlink" href="#assembly-guide" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 </div>
-<p>The most detailed information about how to assemble a shuttleDrive is found in the <a class="reference external" href="https://iopscience.iop.org/article/10.1088/1741-2552/ab77f9">manuscript</a>, so read this first to familiarise yourself with how the drive works, and which decisions you will have to make while building &amp; implanting.</p>
-<p>Other resources:</p>
+<p>This assembly guide is based on the <a class="reference external" href="https://iopscience.iop.org/article/10.1088/1741-2552/ab77fa">manuscript</a> with some small changes to adapt it to the <a class="reference internal" href="partslist.html#partslist"><span class="std std-ref">parts list</span></a> as sold by the Open Ephys Store.</p>
+<p>Before getting started, make sure you have everything on the <a class="reference internal" href="partslist.html#partslist"><span class="std std-ref">parts list</span></a>.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="contents local topic" id="twister3-assembly">
+<p class="topic-title">Twister3 Assembly</p>
 <ul class="simple">
-<li><p>Make sure you have all the parts you need on <a class="reference internal" href="partslist.html#partslist"><span class="std std-ref">this list</span></a>.</p></li>
-<li><p>How to assemble and use the <a class="reference internal" href="assemblyjig.html#refassemblyjig"><span class="std std-ref">Assembly Jig</span></a>.</p></li>
-<li><p>How to assemble and use the <a class="reference internal" href="screwdriver.html#screwdriver"><span class="std std-ref">Custom Screwdriver</span></a>.</p></li>
-<li><p>Watch the video on ShuttleDrive Assembly here:</p></li>
+<li><p><a class="reference internal" href="#a-assemble-wire-feeder" id="id1">A) Assemble Wire Feeder</a></p></li>
+<li><p><a class="reference internal" href="#b-assemble-motor" id="id2">B) Assemble Motor</a></p></li>
+<li><p><a class="reference internal" href="#c-assemble-wire-clip" id="id3">C) Assemble Wire Clip</a></p></li>
+<li><p><a class="reference internal" href="#d-assemble-wire-guide" id="id4">D) Assemble Wire Guide</a></p></li>
+<li><p><a class="reference internal" href="#e-assemble-stock-spool" id="id5">E) Assemble Stock Spool</a></p></li>
+<li><p><a class="reference internal" href="#f-final-assembly-twister3" id="id6">F) Final Assembly Twister3</a></p></li>
 </ul>
-<center><iframe width="560" height="340" src="https://www.youtube.com/embed/VBs4_pltE6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center><ul class="simple">
-<li><p>Follow the step-by-step sheet provided <a class="reference external" href="https://docs.google.com/spreadsheets/d/1qlOEyMCUptONbd9Ac4yKie1TxPHhV1puGx7GZTR9lvk/edit#gid=1386834576">here</a> , made by Dimitra Vardalaki, which you can also print and use as a checklist.</p></li>
-</ul>
+</div>
+<div class="section" id="a-assemble-wire-feeder">
+<h2>A) Assemble Wire Feeder<a class="headerlink" href="#a-assemble-wire-feeder" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/assembly_figure_6.png"><img alt="Twister3 assemble wire feeder" class="align-center" src="../_images/assembly_figure_6.png" style="width: 80%;" /></a>
+<ol class="arabic simple">
+<li><p>Insert press-in components into the feeder base. This includes M3 nut (2x), M3 standoff (2x), and 3/16” diameter dowel pin (2x). This requires a mallet.</p></li>
+<li><p>Mount the feeder base unto the C1545/M mounting clamp using M6 screws (2x). The top of the feeder should be flush with the mounting clamp.</p></li>
+<li><p>Turn each of the two fully-threaded M3 screws into the M3 nut which behind the feeder base. The position of the rod determines the stiction on each bobbin during wire draw. Lower positions provide less stiction. We have found that the second notch is a good position to start with.</p></li>
+<li><p>Bobbin assembly: First insert 2 cube magnets into each bobbin with the same polarity. These magnets will be magnetically mated to the alignment plate on the rotor during bobbin loading. Use the 60 mm M3 screw to mount the bobbin assembly to the standoff captive within the feeder base. Repeat for both sides. The thumb-screw head should be glued onto the M3 screw using epoxy prior to this step.</p></li>
+<li><p>Thread a torsional spring onto the dowel pin. Squeeze it together and then set it between the threaded rod on one side and the shallow groove in each bobbin on the other. Repeat for each bobbin.</p></li>
+<li><p>Install the wire shield above the bobbins using a single M6 screw.</p></li>
+</ol>
+</div>
+<div class="section" id="b-assemble-motor">
+<h2>B) Assemble Motor<a class="headerlink" href="#b-assemble-motor" title="Permalink to this headline">¶</a></h2>
+<img alt="Twister3 assemble motor" class="align-center" src="../_images/assemble_motor.svg" /><ol class="arabic simple">
+<li><p>Remove the long, M3 step screws from the bottom of the stepper motor (4x).</p></li>
+<li><p>Use 40 mm M3 screws (4x) to attach the motor mount to the bottom of the motor.</p></li>
+<li><p>Fix the rotor base onto the shaft with the M3 set screw.</p></li>
+<li><p>Press fit two magnets into the alignment plate in the same orientation. Use a bobbin to make sure the polarity is correct; the two parts should mate. Make sure the magnets are pushed down until recessed below the plastic surface so that they do not interfere with the flat mating surface of the piece.</p></li>
+<li><p>Insert the alignment plate into the slot on the rotor base.</p></li>
+<li><p>Attach two additional magnets on top of those you just inserted into alignment plate. Press the spring rotor onto these magnets to press fit them into the spring rotor base. This procedure ensures that magnets will be press fit into the spring rotor base with the correct polarity. To prevent magnets going deeper into the alignment plate rather than into the spring rotor, separate the spring rotor from the alignment plate before applying full pressure. Make sure the magnets are recessed below the bottom surface of the spring rotor so that it rests flat on top of the alignment plate.</p></li>
+<li><p>Push the clip magnet into one of the slots on the spring rotor top. In the remaining slot, press the twist alignment jig into position over the magnet.</p></li>
+</ol>
+</div>
+<div class="section" id="c-assemble-wire-clip">
+<h2>C) Assemble Wire Clip<a class="headerlink" href="#c-assemble-wire-clip" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/assemble_clip.png"><img alt="Twister3 assemble wire clip" class="align-center" src="../_images/assemble_clip.png" style="width: 265.3px; height: 342.29999999999995px;" /></a>
+<ol class="arabic simple">
+<li><p>Put two pieces of heat shrink tubing over the wire clip jaws.</p></li>
+<li><p>Shrink into position using the hot air gun. This prevents electrode wire from slipping during a draw. The clip can then be stuck under the wire alignment jig (figure 3).</p></li>
+</ol>
+</div>
+<div class="section" id="d-assemble-wire-guide">
+<h2>D) Assemble Wire Guide<a class="headerlink" href="#d-assemble-wire-guide" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/assemble_wire_guide.png"><img alt="Twister3 assemble wire guide" class="align-center" src="../_images/assemble_wire_guide.png" style="width: 229.6px; height: 294.0px;" /></a>
+<ol class="arabic simple">
+<li><p>Screw the wire-guide into a mini, 6 mm diameter optical post.</p></li>
+<li><p>Push the optical post into a swivel post holder.</p></li>
+</ol>
+</div>
+<div class="section" id="e-assemble-stock-spool">
+<h2>E) Assemble Stock Spool<a class="headerlink" href="#e-assemble-stock-spool" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/assemble_spool.png"><img alt="Twister3 assemble spool" class="align-center" src="../_images/assemble_spool.png" style="width: 555.2px; height: 360.0px;" /></a>
+<ol class="arabic simple">
+<li><p>Push a bearing into each of the stock spool bearing cases.</p></li>
+<li><p>Push each of the bearing cases into the stock spool of microwire.</p></li>
+<li><p>Push a 40 mm, M3 screw through the two bearings and screw into a mini, 6 mm diameter optical post.</p></li>
+<li><p>Push the optical post into a swivel post holder.</p></li>
+</ol>
+</div>
+<div class="section" id="f-final-assembly-twister3">
+<h2>F) Final Assembly Twister3<a class="headerlink" href="#f-final-assembly-twister3" title="Permalink to this headline">¶</a></h2>
+<img alt="Twister3 assemble all" class="align-center" src="../_images/assembly_figure_8.png" />
+<ol class="arabic simple">
+<li><p>Screw together the large, 1.5” diameter mounting posts and then screw this long post into either the left or right side of the optical bread board. Mount the stock spool assembly in on the opposite side of the optical breadboard using a M6 screw. Its exact position does not matter.</p></li>
+<li><p>Mount the feeder assembly on the post using the post mounting clamp on its back.</p></li>
+<li><p>Mount the rotor assembly directly in front of the post, as close as it will go, using 3 M6 screws.</p></li>
+<li><p>Mount the wire guide assembly into a position that is in close proximity to the motor assembly using a single M6 screw. The tip of the wire guide should be able to extend into the center grove of a wire bobbin when it is mounted on the rotor bases for wire reloading.</p></li>
+</ol>
+<ol class="arabic simple" id="refcentering" start="5">
+<li><p>With the wire-clip mechanism installed, slide the adjustment plate around until the motor axis of rotation (dotted black line) is precisely in line with the wire bundle (red lines). When properly aligned, the apex of the wire bundle will appear motionless during motor turning.</p></li>
+</ol>
+</div>
 </div>
 
 
@@ -174,8 +251,8 @@
               
               <div class='prev-next-bottom'>
                 
-    <a class='left-prev' id="prev-link" href="../index.html" title="previous page">ShuttleDrive Tetrode Drive</a>
-    <a class='right-next' id="next-link" href="partslist.html" title="next page">Parts list</a>
+    <a class='left-prev' id="prev-link" href="../index.html" title="previous page">Twister3</a>
+    <a class='right-next' id="next-link" href="partslist.html" title="next page">Parts List</a>
 
               </div>
               

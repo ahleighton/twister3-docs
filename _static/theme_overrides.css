@@ -35,21 +35,21 @@
 
 /* navigation bar: main upper bar color*/
 .navbar {
-  background: #afc991 !important;
+  background: #c43939 !important;
   font-size: 1em;
 }
 
 /* navigation bar: text background color and text color when selected*/
 .navbar-nav > .active > .nav-link {
-  background-color: #e6eddf !important;
-  color: #2f401f !important;
+  background-color: #f0e4e4 !important;
+  color: #171717 !important;
   font-weight: normal !important;
   transition-duration: 0.4s;
 }
 
 /* navigation bar: text color of active page when hovered*/
 .navbar-nav > .active > .nav-link:hover {
-  color: #2f401f !important;
+  color: #171717 !important;
   transition-duration: 0.4s;
 }
 
@@ -62,7 +62,7 @@
 
 /* navigation bar: text color of page titles when hovered*/
 .navbar a:hover {
-  color: #2f401f !important;
+  color: #171717 !important;
   transition-duration: 0.4s;
 }
 

@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShuttleDrive Tetrode Drive &#8212; ShuttleDrive Docs 0.0.0 documentation</title>
+    <title>Twister3 &#8212; Twister3 Docs 0.0.0 documentation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="_static/_static/theme_overrides.css" type="text/css" />
@@ -20,7 +20,7 @@
     <link rel="shortcut icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Assembling a ShuttleDrive" href="pages/assemblyguide.html" />
+    <link rel="next" title="Assembly Guide" href="pages/assemblyguide.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
   </head>
@@ -43,15 +43,11 @@
         
         
         <li class="nav-item ">
-            <a class="nav-link" href="pages/assemblyguide.html">Assembling a ShuttleDrive</a>
+            <a class="nav-link" href="pages/assemblyguide.html">Assembly Guide</a>
         </li>
         
         <li class="nav-item ">
-            <a class="nav-link" href="pages/usingdrive.html">Using a ShuttleDrive</a>
-        </li>
-        
-        <li class="nav-item ">
-            <a class="nav-link" href="pages/flexDrive/flexdriveoverview.html">Archive: FlexDrive</a>
+            <a class="nav-link" href="pages/usingtwister.html">User Guide</a>
         </li>
         
         
@@ -95,8 +91,6 @@
       
       
       
-      
-      
     </ul>
 
 </nav>
@@ -118,7 +112,7 @@
         </li>
     
         <li class="nav-item toc-entry toc-h2">
-            <a href="#" class="nav-link">ShuttleDrive Tetrode Drive</a><ul class="nav section-nav flex-column">
+            <a href="#" class="nav-link">Twister3</a><ul class="nav section-nav flex-column">
                 
         <li class="nav-item toc-entry toc-h3">
             <a href="#license" class="nav-link">License</a>
@@ -133,7 +127,7 @@
 
 
 <div class="tocsection editthispage">
-    <a href="https://github.com/open-ephys/shuttledrive-docs/edit/master/source/index.rst">
+    <a href="https://github.com/ahleighton/twister3-docs/edit/main/source/index.rst">
         <i class="fas fa-pencil-alt"></i> Edit this page
     </a>
 </div>
@@ -149,79 +143,77 @@
                 
   <div class="toctree-wrapper compound">
 </div>
-<div class="section" id="shuttledrive-tetrode-drive">
-<h1>ShuttleDrive Tetrode Drive<a class="headerlink" href="#shuttledrive-tetrode-drive" title="Permalink to this headline">¶</a></h1>
-<p><em>This is the documentation site for the Open Ephys ShuttleDrive Tetrode drive, an open-source, lightweight tetrode drive for use in freely moving mice.</em></p>
-<div class="row">
-  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex">
-    <div class="card border-light">
-      <img class="card-img-top" src="_static/images/shuttleDrive_drawing.png" alt="ShuttleDrive Tetrode Drive" style="margin: 0 auto">
-      <a href="https://github.com/open-ephys/shuttle-drive" class="btn btn-primary" style="background-color:#f4d050;border-color:#f4d050; width: 180px; margin: auto">ShuttleDrive Design Files</a>
+<div class="section" id="twister3">
+<h1>Twister3<a class="headerlink" href="#twister3" title="Permalink to this headline">¶</a></h1>
+<p><em>This is the documentation site for the Twister 3, a fast, open-source microwire twister.</em></p>
+<div class="container">
+  <div class="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1 row-cols-xs-1">
+    <div class="col">
+      <div class="card border-white">
+        <img class="card-img-top" src="_static/images/twister.png" alt="Twister illustration" style="margin: 0 auto">
+      </div>
     </div>
-  </div>
-  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex" style="margin-top: 0em!important">
-    <div class="card border-light">
-      <div class="card-body" >
-        <p class="card-text">
-        <h2>Key Specifications<a class="headerlink" href="#key-specifications" title="Permalink to this headline">¶</a></h2>
-        <ul class="simple">
-        <li><p>Channel count: 16 tetrodes, up to 64 ephys channels per ShuttleDrive</p></li>
-        <li><p>Weight: ~2g for 16 tetrode drives</p></li>
-        <li><p>Build time:  &lt; 1 day</p></li>
-        <li><p>Travel distance: 4.5 mm</p></li>
-        <li><p>Fully enclosed mechanism</p></li>
-        <li><p>Low center of gravity</p></li>
-        <li><p>Easy and fast to assemble</p></li>
-        <li><p>Note that there is a design available for a 256 channel, 64 tetrode drive <a class="reference external" href="https://github.com/open-ephys/shuttle-drive/tree/master/large_64drives">here</a></p></li>
-        </ul>
+    <div class="col" style="margin-top: 0em!important">
+      <div class="card border-white">
+        <div class="card-body" >
+          <p class="card-text">
+            <h2>Features<a class="headerlink" href="#key-specifications" title="Permalink to this headline">¶</a></h2>
+            <ul class="simple">
+              <li><p>Fast: Make 70 tetrodes per hour</p></li>
+              <li><p>Constant wire tension during twist</p></li>
+              <li><p>Automation increases repeatability</p></li>
+              <li><p>No need to fold wire before twisting</p></li>
+              <li><p>Control box sets twist parameters</p></li>
+              <li><p>Easy  to assemble</p></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div><p>The 16 tetrode implant weighs approximately 2 grams, so it can be used in freely moving mice. The small size and low center of gravity of the design also makes it possible to target off-center areas, or even to fit a drive implant under a microscope for simultaneous imaging and electrophysiology.
-The flexible recording array geometry allows recordings from multiple brain areas. Individual lowering of each electrode makes it possible to hit deep and small targets. The drive is easy to build, two or three drives can be built per day even with relatively little training. It accommodates arbitrary spatial arrangements of electrodes, and is compatible with a variety of recording systems.</p>
-<p>This design is the successor to the flexDrive, and has improved build speed, robustness, size, and drive stability and linearity.
-The documentation for the flexDrive is available <a class="reference internal" href="pages/flexDrive/flexdriveoverview.html#flexdriveoverview"><span class="std std-ref">here</span></a>.</p>
-<h2 style = "text-align: center"> Getting Started </h2>
-
-<div class="container">
+  <br>
+  <h2 style = "text-align: center"> Getting Started </h2><div class="container">
   <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 row-cols-xs-1">
     <div class="col mb-4">
-      <div class="card h-100 text-center intro-card shadow">
+      <div class="card h-100">
         <a href = pages/assemblyguide.html>
-            <img src="_static/images/noun_screwdriver.svg" class="card-img-top" height="160">
-            <div class="card-body flex-fill">
-              <p class="card-reference">Building a Drive</p>
-            </div>
-        </a>
-      </div>
-    </div>
-    <div class="col mb-4">
-      <div class="card h-100 text-center intro-card shadow">
-        <a href = pages/usingdrive.html>
-            <img src="_static/images/shuttledrive.svg" class="card-img-top" height="160">
-            <div class="card-body flex-fill">
-              <p class="card-reference">Using the Drive</p>
-            </div>
-        </a>
-      </div>
-    </div>
-    <div class="col mb-4">
-      <div class="card h-100 text-center intro-card shadow">
-        <a href = "https://iopscience.iop.org/article/10.1088/1741-2552/ab77f9" target="_blank" rel="noopener noreferrer">
-          <img src="_static/images/paper.svg" class="card-img-top" height="160">
-          <div class="card-body flex-fill">
-            <p class="card-reference">ShuttleDrive Paper <i class="fas fa-external-link-alt" style = "font-size:0.5em; vertical-align: super"></i></p>
+          <img src="_static/images/noun_screwdriver.svg" class="card-img-top" height="120">
+          <div class="card-body">
+            <h5 class="card-title">Assembly Guide</h5>
+            <p class="card-text">Step-by-step guide to building the Twister3</p>
           </div>
         </a>
-
       </div>
     </div>
     <div class="col mb-4">
-      <div class="card h-100 text-center intro-card shadow">
-        <a href = "https://open-ephys.org/drive-implant/drive-parts" target="_blank" rel="noopener noreferrer">
-          <img src="_static/images/noun_macbook.svg" class="card-img-top" height="160" >
-          <div class="card-body flex-fill">
-            <p class="card-reference">Buy Drive Parts <i class="fas fa-external-link-alt" style = "font-size:0.5em; vertical-align: super"></i></p>
+      <div class="card h-100">
+        <a href = pages/usingtwister.html>
+          <img src="_static/images/twist.svg" class="card-img-top" height="120">
+          <div class="card-body">
+            <h5 class="card-title">User Guide</h5>
+            <p class="card-text">Learn how to twist wire probes</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card h-100">
+        <a href = "https://iopscience.iop.org/article/10.1088/1741-2552/ab77fa" target="_blank" rel="noopener noreferrer">
+          <img src="_static/images/paper.svg" class="card-img-top" height="120">
+          <div class="card-body">
+            <h5 class="card-title">Twister3 Manuscript</h5>
+            <p class="card-text">Details on function, characterisation & design</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card h-100">
+        <a class="card-reference" href = "https://open-ephys.org/twister-3" target="_blank" rel="noopener noreferrer">
+          <img src="_static/images/noun_macbook.svg" class="card-img-top" height="120" >
+          <div class="card-body">
+            <h5 class="card-title">Open Ephys Store</h5>
+            <p class="card-text">Buy Twister3 parts </p>
           </div>
         </a>
       </div>
@@ -240,7 +232,7 @@ The documentation for the flexDrive is available <a class="reference internal" h
               
               <div class='prev-next-bottom'>
                 
-    <a class='right-next' id="next-link" href="pages/assemblyguide.html" title="next page">Assembling a ShuttleDrive</a>
+    <a class='right-next' id="next-link" href="pages/assemblyguide.html" title="next page">Assembly Guide</a>
 
               </div>
               
